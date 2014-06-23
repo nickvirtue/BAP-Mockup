@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wtforms">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/wtforms" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

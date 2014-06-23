@@ -1,0 +1,29 @@
+{
+    'response': {
+        'docs': [
+            {'author_s': 'dion@mindhive.co.nz',
+                'name': 'Dion',
+                'category': '4124334535',
+                '_version_': 1471206056264728576L,
+                'id': 'Dion',
+                'content': ["ACT I\r\n\r\nSCENE I. A desert place.\r\n\r\nThunder and lightning. Enter three Witches\r\nFirst Witch\r\nWhen shall we three meet again\r\nIn thunder, lightning, or in rain?\r\nSecond Witch\r\nWhen the hurlyburly's done,\r\nWhen the battle's lost and won.\r\nThird Witch\r\nThat will be ere the set of sun.\r\nFirst Witch\r\nWhere the place?\r\nSecond Witch\r\nUpon the heath.\r\nThird Witch\r\nThere to meet with Macbeth.\r\nFirst Witch\r\nI come, Graymalkin!\r\nSecond Witch\r\nPaddock calls.\r\nThird Witch\r\nAnon.\r\nALL\r\nFair is foul, and foul is fair:\r\nHover through the fog and filthy air.\r\nExeunt"],
+                'author': 'dion@mindhive.co.nz',
+                'description': "ACT I\r\n\r\nSCENE I. A desert place.\r\n\r\nThunder and lightning. Enter three Witches\r\nFirst Witch\r\nWhen shall we three meet again\r\nIn thunder, lightning, or in rain?\r\nSecond Witch\r\nWhen the hurlyburly's done,\r\nWhen the battle's lost and won.\r\nThird Witch\r\nThat will be ere the set of sun.\r\nFirst Witch\r\nWhere the place?\r\nSecond Witch\r\nUpon the heath.\r\nThird Witch\r\nThere to meet with Macbeth.\r\nFirst Witch\r\nI come, Graymalkin!\r\nSecond Witch\r\nPaddock calls.\r\nThird Witch\r\nAnon.\r\nALL\r\nFair is foul, and foul is fair:\r\nHover through the fog and filthy air.\r\nExeunt"
+            }],
+        'start': 0,
+        'numFound': 1},
+    'responseHeader': {
+        'QTime': 9,
+        'params': {'hl.snippets': '5', 'hl.simple.pre': '<em>', 'wt': 'python', 'hl': 'true', 'q': 'when',
+            'hl.simple.post': '</em>', 'indent': 'on',
+            'hl.fl': '*'},
+        'status': 0},
+    'highlighting': {
+        'Dion': {'description': [
+            'ACT I\r\n\r\nSCENE I. A desert place.\r\n\r\nThunder and lightning. Enter three Witches\r\nFirst Witch\r\n<em>When</em>',
+            " shall we three meet again\r\nIn thunder, lightning, or in rain?\r\nSecond Witch\r\n<em>When</em> the hurlyburly's done",
+            ",\r\n<em>When</em> the battle's lost and won.\r\nThird Witch\r\nThat will be ere the set of sun.\r\nFirst Witch\r\nWhere the"],
+            'content': [
+                'ACT I\r\n\r\nSCENE I. A desert place.\r\n\r\nThunder and lightning. Enter three Witches\r\nFirst Witch\r\n<em>When</em>',
+                " shall we three meet again\r\nIn thunder, lightning, or in rain?\r\nSecond Witch\r\n<em>When</em> the hurlyburly's done",
+                ",\r\n<em>When</em> the battle's lost and won.\r\nThird Witch\r\nThat will be ere the set of sun.\r\nFirst Witch\r\nWhere the"]}}}

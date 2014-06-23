@@ -1,0 +1,46 @@
+{% extends "templates/bootstrap.html" %}
+{% set active_page = "assets" %}
+
+{% block title %}Business Assets Platform{% endblock %}
+
+
+{% block header %}
+    <h1>Login</h1>
+    <p>Please login to BAP to continue</p>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <style>
+        {%include 'snippits/_colors.css'%}
+    </style>
+
+    <form class="form-horizontal" role="form" action="/login" method="post">
+
+        <fieldset class="form-group {{'has-error' if form.username.errors}}">
+            {{ form.username.label(class='col-sm-5 control-label', for='username')}}
+            <div class="col-sm-3">
+                {{ form.username(class="form-control", placeholder="username")}}
+                {% for error in form.username.errors %}<div>{{ error }}</div>{% endfor %}
+            </div>
+        </fieldset>
+        <fieldset class="form-group  {{'has-error' if form.password.errors}}">
+            {{ form.password.label(class='col-sm-5 control-label', for='password')}}
+            <div class="col-sm-3">
+                {{ form.password(class="form-control", placeholder="password")}}
+                {% for error in form.password.errors %}<div>{{ error }}</div>{% endfor %}
+            </div>
+
+        </fieldset>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-4">
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+            </div>
+        </div>
+    </form>
+
+
+</div> <!-- /container -->
+
+{% endblock %}

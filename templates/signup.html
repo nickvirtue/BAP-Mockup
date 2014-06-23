@@ -1,0 +1,67 @@
+{% extends "templates/bootstrap.html" %}
+{% set active_page = "assets" %}
+
+{% block title %}Business Assets Platform{% endblock %}
+
+
+{% block header %}
+    <h1>Users</h1>
+    <p>Create a new user</p>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <style>
+        {%include 'snippits/_colors.css'%}
+    </style>
+
+    <form class="form-horizontal" role="form" action="/signup" method="post">
+
+        <fieldset class="form-group {{'has-error' if form.user_name.errors}}">
+            {{ form.user_name.label(class='col-sm-5 control-label', for='user_name')}}
+            <div class="col-sm-3">
+                {{ form.user_name(class="form-control", placeholder="Joe Blogs")}}
+                {% for error in form.user_name.errors %}<div>{{ error }}</div>{% endfor %}
+            </div>
+        </fieldset>
+        <fieldset class="form-group {{'has-error' if form.password.errors}}">
+            {{ form.password.label(class='col-sm-5 control-label', for='password')}}
+            <div class="col-sm-3">
+                {{ form.password(class="form-control", placeholder="Joe Blogs")}}
+                {% for error in form.password.errors %}<div>{{ error }}</div>{% endfor %}
+            </div>
+        </fieldset>
+        <fieldset class="form-group {{'has-error' if form.name.errors}}">
+            {{ form.name.label(class='col-sm-5 control-label', for='name')}}
+            <div class="col-sm-3">
+                {{ form.name(class="form-control", placeholder="Joe Blogs")}}
+                {% for error in form.name.errors %}<div>{{ error }}</div>{% endfor %}
+            </div>
+        </fieldset>
+        <fieldset class="form-group {{'has-error' if form.last_name.errors}}">
+            {{ form.last_name.label(class='col-sm-5 control-label', for='last_name')}}
+            <div class="col-sm-3">
+                {{ form.last_name(class="form-control", placeholder="Joe Blogs")}}
+                {% for error in form.last_name.errors %}<div>{{ error }}</div>{% endfor %}
+            </div>
+        </fieldset>
+        <fieldset class="form-group {{'has-error' if form.email.errors}}">
+            {{ form.email.label(class='col-sm-5 control-label', for='email')}}
+            <div class="col-sm-3">
+                {{ form.email(class="form-control", placeholder="Joe Blogs")}}
+                {% for error in form.email.errors %}<div>{{ error }}</div>{% endfor %}
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-4">
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Signup</button>
+            </div>
+        </div>
+    </form>
+
+
+</div> <!-- /container -->
+
+{% endblock %}
